@@ -21,12 +21,35 @@ Setting up folder and file structure:
 - In p2_transform.py file, load in the .pkl file from the raw folder
 - For the NYPD Complaints dataset, create a new folder called model_dev2 and repeat steps for creating sub-folders and files as above
 
-Clean data: 
-- To clean column names, removing white spaces, special characters, and make all letters lowercase
+Cleaning Data: 
+- To clean column names, remove white spaces, special characters, and make all letters lowercase
 - Examine the data types and make sure they match each column. Be sure to convert categorical columns into objects
 - Drop rows that contain missing values 
 - Select columns to keep and columns to drop based on what will be used for the machine learning task
 - For the cleaned dataset, check that it contains the columns you intend to keep
+
+Transforming Data:
+- Perform ordinal encoding on selected columns with categorical values
+- Create a dataset for the encoding with mapping
+- Save this mapping dataset as a .csv file to the processed data folder
+- Repeat the above steps for additional columns as needed
+- Save a temporary .csv file of the encoded dataset to the processed data folder 
+- Check that all values in the new dataset are numerical
+
+Dataset Splitting: 
+- In the p3_compute.py file, load in the processed dataset
+- Define the independent and dependent (target) variables
+- The independent variables/features are the columns other than the target/dependent variable
+- Use the code for standard scaler and fit it to the features
+- Save the scaler as a .pkl file to the model folder
+- Fit the scaler to the feauers and transform
+- Split the scaled data into training, validation, and testing sets
+- Save the X_train and X.columns to the model folder
+- Create a baseline model using DummyClassifier
+- Using the train and value variables from the data splitting step, create logistic regression models
+
+Errors:
+- When pushing the code from Visual Studio Code to my github repository, I received a few errors including "failed to push some refs" and "pre-receive hook declined." The NYPD dataset was larger than 25mb, and so I listed that dataset in a .env file and placed the .env file to a .gitignore file. I removed the larger dataset from my VSCode workspace and I also re-checked the size of each file under all of the folders in model_dev1 and model_dev2. However, none of my changes were being pushed to the github repository. I deleted and created a new repository and opened all the folders and files for this assignment in a new VSCode window. I was finally able to push and sync all changes to the repository for this assignment. 
 
 
 
