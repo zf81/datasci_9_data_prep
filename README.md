@@ -4,9 +4,9 @@ Selecting datasets suitable for a machine learning experiment, with an emphasis 
 
 Dataset Selection: 
 
-The first dataset was found on [Data.gov] (https://data.gov/): [Infectious Diseases by Disease, County, Year, and Sex] (https://catalog.data.gov/dataset/infectious-diseases-by-disease-county-year-and-sex-d8912). It contains case counts and rates for selected communicable diseases. It is reported for California residents, by disease, county, year, and sex. The data represent cases with an estimated illness onset date from 2001 through the last year indicated from California Confidential Morbidity Reports and/or Laboratory Reports. The inteded machine learning task for this dataset was classification. 
+The first dataset was found on [Data.gov](https://data.gov/): [Infectious Diseases by Disease, County, Year, and Sex](https://catalog.data.gov/dataset/infectious-diseases-by-disease-county-year-and-sex-d8912). It contains case counts and rates for selected communicable diseases. It is reported for California residents, by disease, county, year, and sex. The data represent cases with an estimated illness onset date from 2001 through the last year indicated from California Confidential Morbidity Reports and/or Laboratory Reports. The inteded machine learning task for this dataset was classification. 
 
-The second dataset was found on [Data.gov] (https://data.gov/): [NYPD Complaint Data Current (Year To Date)] (https://catalog.data.gov/dataset/nypd-complaint-data-current-year-to-date). It contains all valid felony, misdemeanor, and violation crimes reported to the New York City Police Department (NYPD) for all complete quarters so far this year (2023). The inteded machine learning task for this dataset was regression. 
+The second dataset was found on [Data.gov](https://data.gov/): [NYPD Complaint Data Current (Year To Date)](https://catalog.data.gov/dataset/nypd-complaint-data-current-year-to-date). It contains all valid felony, misdemeanor, and violation crimes reported to the New York City Police Department (NYPD) for all complete quarters so far this year (2023). The inteded machine learning task for this dataset was regression. 
 
 Data Cleaning and Transformation:
 
